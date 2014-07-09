@@ -1,0 +1,100 @@
+Alberta, Calgary, 51.1000, -114.0167
+Alberta, Edmonton, 53.5667, -113.5167
+Alberta, Grande Prairie, 55.1833, -118.8833
+Alberta, Jasper, 52.8833, -118.0667
+Alberta, Lethbridge, 49.6333, -112.8000
+Alberta, McMurray, 56.6500, -111.2167
+Alberta, Medicine Hat, 50.0167, -110.7167
+Alberta, Red Deer, 52.1833, -113.9000
+British Columbia, Dawson Creek, 55.7333, -120.1833
+British Columbia, Fortelson, 58.8333, -122.5833
+British Columbia, Kamloops, 50.7167, -120.4167
+British Columbia, Nanaimo, 49.1833, -123.9667
+British Columbia, Newestminster, 49.2167, -122.9000
+British Columbia, Penticton, 49.4667, -119.6000
+British Columbia, Prince George, 53.8833, -122.6833
+British Columbia, Prince Rupert, 54.2833, -130.3833
+British Columbia, Trail, 49.1333, -117.7333
+British Columbia, Vancouver, 49.1833, -123.1667
+British Columbia, Victoria, 48.4167, -123.3167
+Manitoba, Brandon, 49.8667, -99.9833
+Manitoba, Churchill, 58.7500, -94.0667
+Manitoba, Dauphin, 51.1000, -100.0500
+Manitoba, Flin Flon, 54.7667, -101.8500
+Manitoba, Portage La Prairie, 49.9000, -98.2667
+Manitoba, The Pas, 53.9667, -101.1000
+Manitoba, Winnipeg, 49.9000, -97.2333
+New Brunswick, Campbellton, 48.0000, -66.6667
+New Brunswick, Chatham, 47.0167, -65.4500
+New Brunswick, Edmundston, 47.3667, -68.3333
+New Brunswick, Fredericton, 45.8667, -66.5333
+New Brunswick, Moncton, 46.1167, -64.6833
+New Brunswick, Saint John, 45.3167, -65.8833
+Newfoundland, Corner Brook, 48.9667, -57.9500
+Newfoundland, Gander, 48.9500, -54.5667
+Newfoundland, Goose Bay, 53.3167, -60.4167
+Newfoundland, St John's, 47.6167, -52.7500
+Newfoundland, Stephenville, 48.5333, -58.5500
+Northwest Territories, Fort Smith, 60.0167, -111.9667
+Northwest Territories, Inuvik, 68.3000, -133.4833
+Northwest Territories, Yellowknife, 62.4667, -114.4500
+Nova Scotia, Amherst, 45.8167, -64.2167
+Nova Scotia, Halifax, 44.6500, -63.5667
+Nova Scotia, Kentville, 45.0500, -64.6000
+Nova Scotia, New Glasgow, 45.6167, -62.6167
+Nova Scotia, Sydney, 46.1667, -60.0500
+Nova Scotia, Truro, 45.3667, -63.2667
+Nova Scotia, Yarmouth, 43.8333, -66.0833
+Nunavut, Iqaluit, 63.7500, -68.5500
+Nunavut, Resolute, 74.7167, -94.9833
+Ontario, Belleville, 44.1500, -77.4000
+Ontario, Chatham, 42.4000, -82.2000
+Ontario, Cornwall, 45.0167, -74.7500
+Ontario, Hamilton, 43.2667, -79.9000
+Ontario, Kapuskasing, 49.4167, -82.4667
+Ontario, Kenora, 49.8000, -94.3667
+Ontario, Kingston, 44.2667, -76.5000
+Ontario, Kitchener, 43.4333, -80.5000
+Ontario, London, 43.0333, -81.1500
+Ontario, North Bay, 46.3667, -79.4167
+Ontario, Oshawa, 43.9000, -78.8667
+Ontario, Ottawa, 45.3167, -75.6667
+Ontario, Owen Sound, 44.5667, -80.9167
+Ontario, Peterborough, 44.2833, -78.3167
+Ontario, St Catharines, 43.1833, -79.2333
+Ontario, Sarnia, 42.9667, -82.3667
+Ontario, Sault Ste Marie, 46.5333, -84.5000
+Ontario, Sudbury, 46.6167, -80.8000
+Ontario, Thunder Bay, 48.3667, -89.3167
+Ontario, Timmins, 48.5667, -81.3667
+Ontario, Toronto, 43.6833, -79.6333
+Ontario, Windsor, 42.2667, -82.9667
+Prince Edward Island, Charlottetown, 46.2833, -63.1333
+Prince Edward Island, Summerside, 46.4333, -63.8333
+Quebec, Bagotville, 48.3333, -71.0000
+Quebec, Chicoutimi, 48.4167, -71.0833
+Quebec, Drummondville, 45.8833, -72.4833
+Quebec, Granby, 45.3833, -72.7000
+Quebec, Hull, 45.4333, -75.7333
+Quebec, Megantic, 45.5833, -70.8667
+Quebec, Montreal, 45.4667, -73.7500
+Quebec, Quebec, 46.8000, -71.3833
+Quebec, Rimouski, 48.4500, -68.5333
+Quebec, St Jean, 45.3000, -73.2667
+Quebec, St Jerome, 45.8000, -74.0167
+Quebec, Sept. Iles, 50.2167, -66.2667
+Quebec, Shawinigan, 46.5667, -72.7167
+Quebec, Sherbrooke, 45.4000, -71.9000
+Quebec, Thetford Mines, 46.0667, -71.3167
+Quebec, Trois Rivieres, 46.3500, -72.5833
+Quebec, Val D'or, 48.0500, -77.7833
+Quebec, Valleyfield, 45.2667, -74.1000
+Saskatchewan, Estevan, 49.0667, -103.0000
+Saskatchewan, Moose Jaw, 50.3333, -105.5500
+Saskatchewan, North Battleford, 52.7667, -108.2500
+Saskatchewan, Prince Albert, 53.2167, -105.6833
+Saskatchewan, Regina, 50.4333, -104.6667
+Saskatchewan, Saskatoon, 52.1667, -106.6833
+Saskatchewan, Swift Current, 50.2833, -107.6833
+Saskatchewan, Yorkton, 51.2667, -102.4667
+Yukon, Whitehorse, 60.7167, -135.0667

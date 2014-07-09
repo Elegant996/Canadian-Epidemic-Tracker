@@ -1,0 +1,1522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>611</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="Marble::MarbleWidget" name="MarbleWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>520</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="toolTip">
+     <string>The Earth</string>
+    </property>
+    <property name="whatsThis">
+     <string>The Marble widget displays a virtual globe.</string>
+    </property>
+    <property name="mapThemeId">
+     <string>earth/openstreetmap/openstreetmap.dgml</string>
+    </property>
+    <property name="showOverviewMap">
+     <bool>true</bool>
+    </property>
+    <property name="showClouds">
+     <bool>false</bool>
+    </property>
+    <property name="showAtmosphere">
+     <bool>false</bool>
+    </property>
+    <property name="showCrosshairs">
+     <bool>true</bool>
+    </property>
+    <property name="showPlaces">
+     <bool>false</bool>
+    </property>
+    <property name="showCities">
+     <bool>false</bool>
+    </property>
+    <property name="showTerrain">
+     <bool>false</bool>
+    </property>
+    <property name="showOtherPlaces">
+     <bool>false</bool>
+    </property>
+    <property name="showRelief">
+     <bool>false</bool>
+    </property>
+    <property name="showElevationModel">
+     <bool>false</bool>
+    </property>
+    <property name="showIceLayer">
+     <bool>false</bool>
+    </property>
+    <property name="showBorders">
+     <bool>false</bool>
+    </property>
+    <property name="showRivers">
+     <bool>false</bool>
+    </property>
+    <property name="showLakes">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>0</y>
+      <width>760</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="documentMode">
+     <bool>false</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="movable">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="case_tab">
+     <attribute name="title">
+      <string>Case Management</string>
+     </attribute>
+     <widget class="QGroupBox" name="formGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>571</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="DiseaseLabel">
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Select Disease</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="DiseaseComboBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Submit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="QuantityLabel">
+         <property name="text">
+          <string>Number of Cases</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="NumberOfCasesEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="provinceBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_2">
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>City</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="DateOfOccurenceLabel">
+         <property name="text">
+          <string>Date of Occurence</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QDateEdit" name="dateEdit">
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QComboBox" name="cityBox"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="provinceLabel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Province</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="gridGroupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>140</y>
+        <width>571</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="4" column="0">
+        <widget class="QLabel" name="SelectDiseaseLabel">
+         <property name="text">
+          <string>Select Disease(s)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QDateEdit" name="fromDateEdit">
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+         <property name="timeSpec">
+          <enum>Qt::UTC</enum>
+         </property>
+         <property name="date">
+          <date>
+           <year>2000</year>
+           <month>2</month>
+           <day>1</day>
+          </date>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="SelectLocationLabel">
+         <property name="text">
+          <string>Select Location(s)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLabel" name="fromDateLabel">
+         <property name="text">
+          <string>From Date</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QComboBox" name="provinceBox_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="MinCaseEdit"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="KnownCasesLabel">
+         <property name="text">
+          <string>Known Cases</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="selectMinimumDiseaseLabel">
+         <property name="text">
+          <string>Min. Cases</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="MaxCaseEdit"/>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="selectMinimumDiseaseLabel_2">
+         <property name="text">
+          <string>Max. Cases</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <widget class="QDateEdit" name="ToDateEdit">
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QLabel" name="ToDateLabel">
+         <property name="text">
+          <string>To Date</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QTableWidget" name="caseTableWidget">
+         <property name="toolTip">
+          <string>Double Click To Edit Selection</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0" rowspan="2">
+        <widget class="QListWidget" name="locationListWidget">
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::MultiSelection</enum>
+         </property>
+         <property name="resizeMode">
+          <enum>QListView::Adjust</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" rowspan="2">
+        <widget class="QListWidget" name="diseaseListWidget">
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::MultiSelection</enum>
+         </property>
+         <property name="resizeMode">
+          <enum>QListView::Adjust</enum>
+         </property>
+         <property name="layoutMode">
+          <enum>QListView::SinglePass</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Supplies_Tab">
+     <attribute name="title">
+      <string>Supply Management</string>
+     </attribute>
+     <widget class="QGroupBox" name="horizontalGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>230</y>
+        <width>571</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="SelectSupplyLabel">
+           <property name="text">
+            <string>Select Supply</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="selectSupplyField">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::MultiSelection</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="SelectLocationLabel_3">
+           <property name="text">
+            <string>Select Location</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="selectLocationField">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::MultiSelection</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="spacing">
+            <number>17</number>
+           </property>
+           <property name="sizeConstraint">
+            <enum>QLayout::SetNoConstraint</enum>
+           </property>
+           <item>
+            <widget class="QLabel" name="DiseaseLabel_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Select Supplytype</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="QuantityLabel_2">
+             <property name="text">
+              <string>Number of Supplies</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="LocationLabel_2">
+             <property name="text">
+              <string>Location</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="SubmitSupplyButton">
+           <property name="text">
+            <string>Submit</string>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="MinSupplyLabel">
+           <property name="text">
+            <string>Min. Supplies</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="minSupplyField">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="MaxSupplyLabel">
+           <property name="text">
+            <string>Max. Supplies</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="maxSupplyField">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="provinceComboBox_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,0">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QComboBox" name="SupplyComboBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="sizeIncrement">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>80</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="NumberOfCasesEdit_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="LocationEdit_2">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="verticalGroupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>571</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="KnownSupplyLabel">
+         <property name="text">
+          <string>Known Supplies</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="knownSuppliesTable">
+         <property name="toolTip">
+          <string>Double Click To Edit Selection</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::DoubleClicked</set>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="ShipmentTab">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Shipment Management</string>
+     </attribute>
+     <widget class="QGroupBox" name="verticalGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>571</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QLabel" name="shipmentSupplyLabel">
+         <property name="text">
+          <string>Existing Shipments</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="shipmentExistingShipments"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="shipmentToRegionLabel">
+           <property name="text">
+            <string>To Region:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="shipmentComboBoxRegion"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>From Region:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="shipmentComboBoxCity"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Status:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="shipmentStatusComboBox"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="verticalGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>240</y>
+        <width>571</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QLabel" name="shipmentSupplyTypeLabel">
+         <property name="text">
+          <string>SupplyType</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="shipmentSupplyTypeWidget"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="shipmentToRegionLabel_2">
+           <property name="text">
+            <string>To Region:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="shipmentComboBoxRegion_2"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="shipmentFromRegionLabel_2">
+           <property name="text">
+            <string>From Region:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="shipmentComboBoxCity_2"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QLabel" name="shipmentShipLabel">
+           <property name="contextMenuPolicy">
+            <enum>Qt::DefaultContextMenu</enum>
+           </property>
+           <property name="text">
+            <string>Amount to ship</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="openExternalLinks">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="dateEdit_2">
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="submitShipmentButton">
+           <property name="text">
+            <string>Submit</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="MapSettingsTab">
+     <attribute name="title">
+      <string>Map Settings</string>
+     </attribute>
+     <widget class="QGroupBox" name="gridGroupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>760</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="2" column="0">
+        <widget class="QLabel" name="KnownCasesLabel_2">
+         <property name="text">
+          <string>Known Cases</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Select Province</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="provinceComboBox_2"/>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="KnownSupplyLabel_2">
+         <property name="text">
+          <string>Known Supplies</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Select Region</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="regionComboBox"/>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QListWidget" name="supplyListWidget">
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::MultiSelection</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QListWidget" name="caseListWidget_2">
+         <property name="toolTip">
+          <string>Double Click To Edit Selection</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::MultiSelection</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Marble::MarbleNavigator" name="MarbleNavigator">
+    <property name="geometry">
+     <rect>
+      <x>-40</x>
+      <y>0</y>
+      <width>181</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Navigation Control</string>
+    </property>
+    <property name="whatsThis">
+     <string>Use this control to navigate.</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionFile"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuNetwork">
+    <property name="title">
+     <string>Network</string>
+    </property>
+    <addaction name="actionConnect"/>
+    <addaction name="actionDisconnect"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuNetwork"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionFile">
+   <property name="text">
+    <string>File</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+   <property name="toolTip">
+    <string>Disconnect from the server</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Marble::MarbleNavigator</class>
+   <extends>QWidget</extends>
+   <header>MarbleNavigator.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Marble::MarbleWidget</class>
+   <extends>QWidget</extends>
+   <header>MarbleWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>307</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>zoomIn()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>zoomIn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>zoomOut()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>zoomOut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>zoomIn()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>251</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>zoomOut()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>251</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>moveLeft()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>moveLeft()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>moveRight()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>moveRight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>moveDown()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>moveDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>moveUp()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>moveUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>moveDown()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>moveLeft()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>moveRight()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>moveUp()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>goHome()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>goHome()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>goHome()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>zoomChanged(int)</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>zoomView(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleNavigator</sender>
+   <signal>zoomChanged(int)</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MarbleWidget</sender>
+   <signal>zoomChanged(int)</signal>
+   <receiver>MarbleNavigator</receiver>
+   <slot>changeZoom(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>50</x>
+     <y>136</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>provinceBox_2</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>getCitiesFromProvinceListView(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>853</x>
+     <y>561</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>514</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>provinceBox</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>getCitiesFromProvince(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>722</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>514</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>provinceComboBox_3</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>getCitiesFromSupplyTab(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>940</x>
+     <y>374</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>514</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MainWindow</sender>
+   <signal>iconSizeChanged(QSize)</signal>
+   <receiver>tabWidget</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>499</x>
+     <y>307</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>760</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>diseaseListWidget</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>CreateAndUpdateTable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>660</x>
+     <y>461</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>locationListWidget</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>CreateAndUpdateTable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>660</x>
+     <y>547</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>sendNewDisease()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>612</x>
+     <y>186</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>submitShipmentButton</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>sendNewShipment()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1017</x>
+     <y>564</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>selectSupplyField</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>CreateAndUpdateSupplyTable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>670</x>
+     <y>338</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>selectLocationField</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>CreateAndUpdateSupplyTable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>670</x>
+     <y>427</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>regionComboBox</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>goToPosition(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>947</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>514</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>provinceComboBox_2</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>getCitiesFromProvinceMapView(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>739</x>
+     <y>365</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>514</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionFile</sender>
+   <signal>triggered()</signal>
+   <receiver>MarbleWidget</receiver>
+   <slot>updateChangedMap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionFile</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setMoon()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>639</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>caseListWidget_2</sender>
+   <signal>itemSelectionChanged()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>updateLayerInterfaceCases()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>903</x>
+     <y>285</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>639</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>goToPosition(QString)</slot>
+  <slot>getCitiesFromProvince(QString)</slot>
+  <slot>updateLayerInterfaceCases()</slot>
+  <slot>getCitiesFromProvinceListView(QString)</slot>
+  <slot>getCitiesFromProvinceMapView(QString)</slot>
+  <slot>getCitiesFromSupplyTab(QString)</slot>
+  <slot>getCitiesForShipment(QString)</slot>
+  <slot>getCitiesFromProvinceListView_2(QString)</slot>
+  <slot>CreateAndUpdateTable()</slot>
+  <slot>sendNewDisease()</slot>
+  <slot>sendNewShipment()</slot>
+  <slot>CreateAndUpdateSupplyTable()</slot>
+  <slot>setMoon()</slot>
+  <slot>UpdateUiOnSelect()</slot>
+ </slots>
+</ui>

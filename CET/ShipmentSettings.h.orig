@@ -1,0 +1,43 @@
+#ifndef SHIPMENTSETTINGS_H
+#define SHIPMENTSETTINGS_H
+
+#include <QDialog>
+#include <QDate>
+#include "../Common/include/City.h"
+#include "../Common/include/SupplyType.h"
+#include "../Common/include/Supply.h"
+#include "../Common/include/Shipment.h"
+#include "include/Model.h"
+
+namespace Ui {
+    class ShipmentSettings;
+}
+
+class ShipmentSettings : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit ShipmentSettings(QWidget *parent = 0);
+    ShipmentSettings(int id, int supplyType, int amount, QDate fromDate, QDate toDate,
+                         QString fromRegion, QString toRegion, QWidget *parent = 0);
+        ShipmentSettings(Shipment *shipment, Supply *supply, Model *model, QWidget *parent = 0);
+
+    ~ShipmentSettings();
+
+    QDate getSentDate() { return sentDate; }
+    QDate getArrivedDate() { return arrivedDate; }
+    int getAmountToShip() { return amountToShip; }
+    City *getFromRegion() { return fromRegion; }
+    City *getToRegion() { return toRegion; }
+
+private:
+    Ui::ShipmentSettings *ui;
+    City *fromRegion;
+    City *toRegion;
+    int amountToShip;
+    QDate sentDate;
+    QDate arrivedDate;
+};
+
+#endif // SHIPMENTSETTINGS_H
